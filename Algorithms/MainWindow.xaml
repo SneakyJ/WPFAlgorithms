@@ -1,0 +1,36 @@
+﻿<Window x:Class="Algorithms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Algorithms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Label x:Name="inputLabel" Content="Input" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,-4.134"/>
+        <TextBox x:Name="input" HorizontalAlignment="Left" Height="23" Margin="40,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" TextAlignment="Right"/>
+        <Label x:Name="patternLabel" Content="Pattern" HorizontalAlignment="Left" Margin="280,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,-4.134"/>
+        <TextBox x:Name="pattern" HorizontalAlignment="Left" Height="23" Margin="280,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" TextAlignment="Right"/>
+        <Label x:Name="result" Content="Result" HorizontalAlignment="Left" Margin="520,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,-4.134"/>
+        
+        <Label Content="Sorting" HorizontalAlignment="Left" Margin="40,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,-4.134"/>
+        <RadioButton x:Name="bubble"    Content="Bubble"    HorizontalAlignment="Left" Margin="40,120,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="selection" Content="Selection" HorizontalAlignment="Left" Margin="180,120,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="insertion" Content="Insertion" HorizontalAlignment="Left" Margin="320,120,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="merge"     Content="Merge"     HorizontalAlignment="Left" Margin="460,120,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Searching" HorizontalAlignment="Left" Margin="40,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,-4.134"/>
+        <RadioButton x:Name="linear" Content="Linear search" HorizontalAlignment="Left" Margin="40,200,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="binary" Content="Binary search" HorizontalAlignment="Left" Margin="180,200,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Additional algorithms" HorizontalAlignment="Left" Margin="40,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,-4.134"/>
+        <RadioButton x:Name="stringRevert"  Content="Revert string algorithm"   HorizontalAlignment="Left" Margin="40,280,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="hashing"       Content="Hashing"                   HorizontalAlignment="Left" Margin="180,280,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="fibonacci"     Content="Fibonacci Straight"        HorizontalAlignment="Left" Margin="320,280,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="factorial"     Content="Factorial finding"         HorizontalAlignment="Left" Margin="460,280,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="recFactorial"  Content="Factorial finding(recursive)" HorizontalAlignment="Left" Margin="600,280,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="parser" Content="Parse" HorizontalAlignment="Left" Margin="320,320,0,0" VerticalAlignment="Top" Width="150" Click="Parse"/>
+        <Button x:Name="process" Content="Process" HorizontalAlignment="Left" Margin="600,320,0,0" VerticalAlignment="Top" Width="150" Click="Process_Algorithm"/>
+    </Grid>
+</Window>
