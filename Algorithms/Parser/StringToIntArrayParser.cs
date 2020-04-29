@@ -14,6 +14,7 @@ namespace Algorithms.Parser
 
             int intInput = Int32.Parse(input);
 
+
             parsedList.Add(intInput);
             return parsedList;
         }
