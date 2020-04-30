@@ -44,7 +44,17 @@ namespace Algorithms
         private void Parse(object sender, RoutedEventArgs e)
         {
             StringToIntArrayParser parsedValue = new StringToIntArrayParser();
-            parsedValue.toIntList(input.Text);
+            List<int> res = new List<int>();
+
+            res = parsedValue.toIntList(input.Text);
+            
+            string rest = "";
+            res.ForEach(x => 
+            {
+                x.ToString();
+                rest = rest + x;
+            });
+            result.Content = rest;
         }
     }
 }

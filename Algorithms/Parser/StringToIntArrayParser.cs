@@ -10,13 +10,30 @@ namespace Algorithms.Parser
     {
         public List<int> toIntList(string input)
         {
-            List<int> parsedList = new List<int>();
+            int charQuantity = input.Length;
+            List<int> parsedIntList = new List<int>();
+            List<int> revertedParsedIntList = new List<int>();
+            int remainingDigits = Int32.Parse(input);
+            int lastDigit, listQuantity;
 
-            int intInput = Int32.Parse(input);
+            while (charQuantity > 0)
+            {
+                lastDigit = remainingDigits % 10;
+                revertedParsedIntList.Add(lastDigit);
 
+                remainingDigits = remainingDigits / 10;
+                charQuantity--;
+            }
 
-            parsedList.Add(intInput);
-            return parsedList;
+            listQuantity = revertedParsedIntList.Count;
+
+            while ( listQuantity > 0)
+            {
+                parsedIntList.Add(revertedParsedIntList[listQuantity-1]);
+                listQuantity--;
+            }
+
+            return parsedIntList;
         }
     }
 }
