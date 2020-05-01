@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Algorithms.Sorting;
-using Algorithms.Parser;
+using Algorithms.Parsers;
 
 namespace Algorithms
 {
@@ -43,10 +43,10 @@ namespace Algorithms
 
         private void Parse(object sender, RoutedEventArgs e)
         {
-            StringToIntArrayParser parsedValue = new StringToIntArrayParser();
+            Parser parsedValue = new Parser();
             List<int> res = new List<int>();
 
-            res = parsedValue.toIntList(input.Text);
+            res = parsedValue.StringToIntList(input.Text);
             
             string rest = "";
             res.ForEach(x => 

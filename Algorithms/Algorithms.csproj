@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Parser\StringToIntArrayParser.cs" />
+    <Compile Include="Parsers\Parser.cs" />
     <Compile Include="Sorting\BubbleSorting.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
