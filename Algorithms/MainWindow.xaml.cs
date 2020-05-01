@@ -34,13 +34,19 @@ namespace Algorithms
             if ((bool)bubble.IsChecked)
             {
                 result.Content = input.Text;
+
+                Parser parsedValue = new Parser();
+                List<int> convertedInput = new List<int>();
+                convertedInput = parsedValue.StringToIntList(input.Text);
+
                 BubbleSorting t = new BubbleSorting();
-                result.Content = t.Sort(input.Text);
+                result.Content = t.Sort(convertedInput);
             };
             if ((bool)fibonacci.IsChecked) MessageBox.Show(fibonacci.Name);
 
         }
 
+        // code for parse functionality testing
         private void Parse(object sender, RoutedEventArgs e)
         {
             Parser parsedValue = new Parser();
