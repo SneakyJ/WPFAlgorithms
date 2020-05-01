@@ -36,12 +36,12 @@ namespace Algorithms
                 result.Content = input.Text;
 
                 Parser parsedValue = new Parser();
-                List<int> convertedInput = new List<int>();
-                convertedInput = parsedValue.StringToIntList(input.Text);
+                List<int> convertedInput = parsedValue.StringToIntList(input.Text);
 
                 BubbleSorting t = new BubbleSorting();
                 result.Content = t.Sort(convertedInput);
             };
+
             if ((bool)fibonacci.IsChecked) MessageBox.Show(fibonacci.Name);
 
         }
