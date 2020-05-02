@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Algorithms.Sorting;
-using Algorithms.Parsers;
+using Algorithms.Convertors;
 
 namespace Algorithms
 {
@@ -35,32 +35,18 @@ namespace Algorithms
             {
                 result.Content = input.Text;
 
-                Parser parsedValue = new Parser();
-                List<int> convertedInput = parsedValue.StringToIntList(input.Text);
+                StringToIntList toListConvertor = new StringToIntList();
+                List<int> convertedInput = toListConvertor.Convert(input.Text);
 
                 BubbleSorting t = new BubbleSorting();
-                result.Content = t.Sort(convertedInput);
+                List<int> sortedList = new List<int>(t.Sort(convertedInput));
+
+                IntListToString toStringConvertor = new IntListToString();
+                result.Content = toStringConvertor.Convert(sortedList);
             };
 
             if ((bool)fibonacci.IsChecked) MessageBox.Show(fibonacci.Name);
 
-        }
-
-        // code for parse functionality testing
-        private void Parse(object sender, RoutedEventArgs e)
-        {
-            Parser parsedValue = new Parser();
-            List<int> res = new List<int>();
-
-            res = parsedValue.StringToIntList(input.Text);
-            
-            string rest = "";
-            res.ForEach(x => 
-            {
-                x.ToString();
-                rest = rest + x;
-            });
-            result.Content = rest;
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Sorting
 {
-    class BubbleSorting
+    public class BubbleSorting
     {
-        public string Sort(List<int> input)
+        public List<int> Sort(List<int> input)
         {
             int length = input.Count;
             int isSwaped = 0;
@@ -30,14 +30,7 @@ namespace Algorithms.Sorting
                     break;
                 }
             }
-                 
-            string rest = "";
-            input.ForEach(x =>
-            {
-                x.ToString();
-                rest = rest + x;
-            });
-            return rest;
+            return input;
         }
     }
 }

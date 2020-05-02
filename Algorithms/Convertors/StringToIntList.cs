@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.Parsers
+namespace Algorithms.Convertors
 {
-    public class Parser
+    public class StringToIntList
     {
-        public List<int> StringToIntList(string input)
+        public List<int> Convert(string input)
         {
             int charQuantity = input.Length;
             List<int> parsedIntList = new List<int>();

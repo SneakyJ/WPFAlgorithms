@@ -30,7 +30,6 @@
         <RadioButton x:Name="factorial"     Content="Factorial finding"         HorizontalAlignment="Left" Margin="460,280,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="recFactorial"  Content="Factorial finding(recursive)" HorizontalAlignment="Left" Margin="600,280,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="parser" Content="Parse" HorizontalAlignment="Left" Margin="320,320,0,0" VerticalAlignment="Top" Width="150" Click="Parse"/>
         <Button x:Name="process" Content="Process" HorizontalAlignment="Left" Margin="600,320,0,0" VerticalAlignment="Top" Width="150" Click="Process_Algorithm"/>
     </Grid>
 </Window>
