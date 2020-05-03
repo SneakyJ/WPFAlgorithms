@@ -52,7 +52,7 @@
     <Compile Include="Convertors\IntListToString_uTests.cs" />
     <Compile Include="Convertors\StringToIntList_uTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sorting\BubbleSorting_uTests.cs" />
+    <Compile Include="Sorting\Bubble_uTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

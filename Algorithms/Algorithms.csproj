@@ -57,7 +57,8 @@
     </ApplicationDefinition>
     <Compile Include="Convertors\IntListToString.cs" />
     <Compile Include="Convertors\StringToIntList.cs" />
-    <Compile Include="Sorting\BubbleSorting.cs" />
+    <Compile Include="GenericTest.cs" />
+    <Compile Include="Sorting\Bubble.cs" />
     <Compile Include="Sorting\Selection.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

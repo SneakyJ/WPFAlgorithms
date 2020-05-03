@@ -33,17 +33,19 @@ namespace Algorithms
 
             if ((bool)bubble.IsChecked)
             {
-                result.Content = input.Text;
+                List<int> convertedInput = StringToIntList.Convert(input.Text);
+                List<int> sortedList = Bubble.Sort(convertedInput);
 
-                StringToIntList toListConvertor = new StringToIntList();
-                List<int> convertedInput = toListConvertor.Convert(input.Text);
-
-                BubbleSorting t = new BubbleSorting();
-                List<int> sortedList = new List<int>(t.Sort(convertedInput));
-
-                IntListToString toStringConvertor = new IntListToString();
-                result.Content = toStringConvertor.Convert(sortedList);
+                result.Content = IntListToString.Convert(sortedList);
             };
+
+            if ((bool)selection.IsChecked) 
+            {
+                List<int> convertedInput = StringToIntList.Convert(input.Text);
+                List<int> sortedList = Selection.Sort(convertedInput);
+
+                result.Content = IntListToString.Convert(sortedList);
+            }
 
             if ((bool)fibonacci.IsChecked) MessageBox.Show(fibonacci.Name);
 

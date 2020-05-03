@@ -17,8 +17,7 @@ namespace Algorithms.Tests.Convertors
             string expected = "1234";
 
             // act
-            IntListToString x = new IntListToString();
-            string actual = x.Convert(inputString);
+            string actual = IntListToString.Convert(inputString);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -31,8 +30,7 @@ namespace Algorithms.Tests.Convertors
             List<int> inputString = new List<int>() { 1, 2, 3, 4 };
 
             // act
-            IntListToString x = new IntListToString();
-            var actual = x.Convert(inputString);
+            var actual = IntListToString.Convert(inputString);
 
             // assert
             Assert.IsInstanceOfType(actual, typeof(string));

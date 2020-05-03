@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Convertors
 {
-    public class IntListToString
+    public static class IntListToString
     {
-        public string Convert(List<int> input)
+        public static string Convert(List<int> input)
         {
             string stringResult = "";
             input.ForEach(x =>

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Sorting
 {
-    public class BubbleSorting
+    public static class Bubble
     {
-        public List<int> Sort(List<int> input)
+        public static List<int> Sort(List<int> input)
         {
             int length = input.Count;
             int isSwaped = 0;

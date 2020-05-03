@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Convertors
 {
-    public class StringToIntList
+    public static class StringToIntList
     {
-        public List<int> Convert(string input)
+        public static List<int> Convert(string input)
         {
             int charQuantity = input.Length;
             List<int> parsedIntList = new List<int>();
